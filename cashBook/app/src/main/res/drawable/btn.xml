@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--手指未触摸-->
+    <item android:state_pressed="false">
+        <layer-list>
+            <item>
+
+                <shape
+                    android:shape="rectangle">
+                    <!--填充颜色-->
+                    <!--<solid android:color="@color/colorPrimary"/>-->
+                    <!--描边 白色 宽度1px-->
+                    <stroke android:color="#9D9D9D"
+                        android:width="1px"/>
+                    <!--内容与该圆形的间距-->
+                    <padding android:bottom="8dp" android:left="8dp" android:right="8dp" android:top="8dp"/>
+                    />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <!--手指触摸-->
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape
+                    android:shape="rectangle">
+                    <!--<solid android:color="#BEBEBE"/>-->
+                    <stroke android:color="#000000"
+                        android:width="2px"/>
+                    <padding android:bottom="8dp" android:left="8dp" android:right="8dp" android:top="8dp"/>
+                    />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>
